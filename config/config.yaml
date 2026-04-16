@@ -1,0 +1,20 @@
+# Week 1: Input + Detection Configuration
+# Simple config for getting started - only input and detection settings
+
+input:
+  source: 0                    # 0 for webcam, or path to video file
+  width: 640                   # Frame width (resize for performance)
+  height: 480                  # Frame height
+  fps: 30                      # Target FPS
+
+detection:
+  model_path: "yolov8n.pt"     # YOLOv8 nano (fastest, smallest)
+  confidence_threshold: 0.5    # Only detect if confidence > 50%
+  classes: [0]                 # COCO class 0 = person only
+  device: "auto"               # auto, cpu, or cuda
+
+visualization:
+  bbox_color: [0, 255, 0]      # Green bounding boxes (BGR format)
+  bbox_thickness: 2
+  font_scale: 0.6
+  show_fps: true

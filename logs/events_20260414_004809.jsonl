@@ -1,0 +1,2 @@
+{"event_type": "behavior", "track_id": "1", "behavior": "fallen", "confidence": 0.7, "velocity": 0.0, "timestamp": "2026-04-14T00:48:10.352703", "epoch_time": 1776107890.352712}
+{"event_type": "alert", "alert_type": "PERSON_FALLEN", "track_id": "1", "severity": "high", "details": {"behavior": "fallen", "confidence": 0.7}, "timestamp": "2026-04-14T00:48:10.353239", "epoch_time": 1776107890.3532455}

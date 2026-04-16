@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python app/main.py)",
+      "Bash(timeout 10 python app/main.py --source 0)",
+      "Bash(echo \"=== EXIT CODE: $? ===\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.output_module import OutputModule; print\\('✓ OutputModule imports successfully'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.input_module.input_handler import InputHandler; print\\('✓ InputHandler imports successfully'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.detection_module.detector import DetectionModule; print\\('✓ DetectionModule imports successfully'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.tracking_module.tracker import TrackingModule; print\\('✓ TrackingModule imports successfully'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.detection_module.detector import DetectionModule; print\\('OK DetectionModule'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from src.tracking_module.tracker import TrackingModule; print\\('OK TrackingModule'\\)\")",
+      "Bash(python -m py_compile app/dashboard.py)",
+      "Bash(python:*)",
+      "Bash(head -5 logs/events_*.jsonl)"
+    ]
+  }
+}
